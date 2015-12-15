@@ -12,6 +12,9 @@ Route.get('/test', function(req, res, next){
     res.end('Test data');
 });
 
+// Coment
+
 module.exports = function(app){
     app.use(Route);
+    console.log('test');
 };
