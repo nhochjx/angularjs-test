@@ -13,6 +13,9 @@ Route.get('/test', function(req, res, next){
 });
 
 // Coment
+Route.get('/git', function(req, res, next){
+    res.end('Hello git');
+});
 
 module.exports = function(app){
     app.use(Route);
