@@ -8,6 +8,10 @@ Route.get('/', function(req, res, next){
     });
 });
 
+Route.get('/test', function(req, res, next){
+    res.end('Test data');
+});
+
 module.exports = function(app){
     app.use(Route);
 };
