@@ -1,10 +1,8 @@
 var express = require('express');
 var app = express();
 
-require('./route.js')(app);
-
-app.get('/hehe', function(req, res, mext){
-    res.end('Test hehe');
+app.get('/xinchao', function(req, res, mext){
+    res.end('Hello word');
 });
 
 var port = app.get('port') || 3000;

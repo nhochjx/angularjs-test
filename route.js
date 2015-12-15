@@ -8,6 +8,10 @@ Route.get('/', function(req, res, next){
     });
 });
 
+Route.get('/git', function(req, res, next){
+    res.end('Hello git');
+});
+
 module.exports = function(app){
     app.use(Route);
 };
